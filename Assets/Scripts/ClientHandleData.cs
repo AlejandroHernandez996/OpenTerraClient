@@ -13,6 +13,7 @@ public class ClientHandleData
     {
         packets.Add((int)ServerPackets.SWelcomeMessage, DataReceiver.HandleWelcomeMsg);
         packets.Add((int)ServerPackets.SMatchMade, DataReceiver.HandleMatchMade);
+        packets.Add((int)ServerPackets.SStartGame, DataReceiver.HandleStartGame);
     }
     public static void HandleData(byte[] data)
     {
